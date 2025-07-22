@@ -19,17 +19,17 @@
  </style>
 
 <body class="font-sans">
-    <div class="container-cadastro w-full h-screen bg-[url('./images/banner.jpg')] bg-center bg-cover bg-no-repeat flex justify-center items-center bg-red-500 ">
+    <div class="container-cadastro w-full h-screen bg-[url('./images/banner.jpg')] bg-center bg-cover bg-no-repeat flex justify-center items-center">
          <div class="content-cadastro bg-white w-[400px] flex flex-col py-[20px] px-[20px] shadow-md rounded-[10px]">
              <h1 class="text-[2rem] font-bold text-center mb-[20px]">Cadastro</h1>
 
 
-             <form action="">
+             <form action="" id="formulario">
 
  <div class="input-entradas">
                 <label for="nome" class="text-[1rem] font-medium">Nome:</label>
                 <div class="nome">
-                     <input type="text" id="nome" class="border rounded-md w-full p-[2px] px-[5px] text-[1rem] mb-[10px]">
+                     <input type="text" id="nome" class="  border rounded-md w-full p-[2px] px-[5px] text-[1rem] mb-[10px]">
                 </div>
 
             
@@ -40,7 +40,7 @@
 
                  <label for="dataNascimento" class="text-[1rem] font-medium">Data de nascimento:</label>
                 <div class="dataN">
-                     <input type="date" name="dataNascimento" id="dataNascimento" class="border rounded-md w-full p-[2px] px-[5px] text-[1rem] mb-[10px]">
+                     <input type="date" name="dataNascimento" id="dataNascimento" class="  border rounded-md w-full p-[2px] px-[5px] text-[1rem] mb-[10px]">
                 </div>
 
                  <label for="email" class="text-[1rem] font-medium">Email:</label>
@@ -52,46 +52,41 @@
                 
                  <label for="cpf" class="text-[1rem] font-medium">CPF:</label>
                  <div class="cpf">
-                   <input type="text" name="cpf" id="cpf" class="border rounded-md w-full p-[2px] px-[5px] text-[1rem] mb-[10px]">
+                   <input type="text" name="cpf" id="cpf" class=" border rounded-md w-full p-[2px] px-[5px] text-[1rem] mb-[10px]" maxlength="11" minlength="11">
                 </div>
 
 
                 
                  <label for="Telefone" class="text-[1rem] font-medium">Telefone:</label>
                  <div class="telefone">
-              <input type="text" name="telefone" id="phone" class="border rounded-md w-full p-[2px] px-[5px] text-[1rem] mb-[10px]">
+              <input type="tel" name="telefone" id="phone" class="border rounded-md w-full p-[2px] px-[5px] text-[1rem] mb-[10px]">
                  </div>
 
 
 
 
-            <label for="Telefone" class="text-[1rem] font-medium">Marque o seu Genero</label>
-                 <div class="genero flex gap-3 mb-[10px]">
+            <label for="genero" class="text-[1rem] font-medium">Marque o seu Genero</label>
+                 <div class="flex gap-3 mb-[10px]" id="genero">
 
                     <div class="genero-mas">
-                <input type="radio" name="Genero" id="genero" class="border rounded-md p-[2px] px-[5px] text-[1rem] mb-[10px]">
+                <input type="radio" name="Genero"  class="border rounded-md p-[2px] px-[5px] text-[1rem] mb-[10px]">
                  <label for="sexoM">Masculino</label></div>
 
 
                  <div class="genero-fem">
 
-                <input type="radio" name="Genero" id="genero" class="border rounded-md p-[2px] px-[5px] text-[1rem] mb-[10px]">
-                <label for="sexoM">Feminino</label></div>
+                <input type="radio" name="Genero" class=" border rounded-md p-[2px] px-[5px] text-[1rem] mb-[10px]">
+                <label for="sexoF">Feminino</label></div>
                  
                  </div>
                     </div>
-
-          <div class="plan mb-[10px]">
-                <select name="plan" id="plan">
-              <option value="selected" selected disabled>Selecione um plano</option>
-              <option value="plan-b">Plano bronze</option>
-              <option value="plan-p">Plano prata</option>
-              <option value="plan-o">Plano ouro</option>
-             </select>
-          </div>
                     
                  <div class="btn">
-                       <button class="cursor-pointer bg-blue-500 px-[15px] py-[5px] rounded-[15px] text-[1.1rem] text-white ">Cadastrar</button>
+                       <button class="cursor-pointer bg-blue-500 px-[15px] py-[5px] rounded-[15px] text-[1.1rem] text-white " id="btn">Cadastrar</button>
+                 </div>
+
+                 <div id="res">
+
                  </div>
 
              </div>
@@ -101,10 +96,12 @@
         </form>
       
     </div>
-
+     
     </div>
+
+    
          
 
-            
+   <script src="script.js"></script>    
 </body>
 </html>
