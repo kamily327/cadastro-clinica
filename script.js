@@ -31,7 +31,7 @@ btn.addEventListener('click' , function(){
           console.log(dadosUsuario);
         }
         else if(idade <= 17){
-          alert('Usuario nao pode se cadastrar!');
+          alert('O Usuário não Pode se Cadastrar ,a Idade não é Permitida!! !');
         }
        }
 
